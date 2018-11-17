@@ -5,6 +5,8 @@ import { TabsPage } from './tabs.page';
 import { HomePage } from '../home/home.page';
 import { AboutPage } from '../about/about.page';
 import { ContactPage } from '../contact/contact.page';
+import {LocationPage} from '../location/location.page';
+import {NewsPage} from '../news/news.page';
 
 const routes: Routes = [
   {
@@ -27,10 +29,15 @@ const routes: Routes = [
         component: AboutPage
       },
       {
-        path: 'contact',
-        outlet: 'contact',
-        component: ContactPage
-      }
+            path: 'location',
+            outlet: 'location',
+            component: LocationPage
+        },
+        {
+          path: 'news',
+            outlet: 'news',
+            component: NewsPage
+        }
     ]
   },
   {

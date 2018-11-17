@@ -26,6 +26,7 @@
     "@ionic/angular": "4.0.0-beta.15",
     "core-js": "^2.5.3",
     "rxjs": "6.2.2",
+    "videogular2": "^6.3.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "@angular/compiler-cli": "~6.1.1",
     "@angular/language-service": "~6.1.1",
     "@ionic/angular-toolkit": "^1.0.0",
+    "@types/core-js": "^2.5.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.0",
