@@ -7,6 +7,8 @@ import { AboutPage } from '../about/about.page';
 import { ContactPage } from '../contact/contact.page';
 import {LocationPage} from '../location/location.page';
 import {NewsPage} from '../news/news.page';
+import {CentralPageModule} from '../central/central.module';
+import {CentralPage} from '../central/central.page';
 
 const routes: Routes = [
   {
@@ -15,7 +17,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/tabs/(home:home)',
+        redirectTo: '/tabs/(centre:centre)',
         pathMatch: 'full',
       },
       {
@@ -37,12 +39,17 @@ const routes: Routes = [
           path: 'news',
             outlet: 'news',
             component: NewsPage
-        }
+        },
+        {
+            path: 'centre',
+            outlet: 'centre',
+            component: CentralPage
+        },
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/(home:home)',
+    redirectTo: '/tabs/(centre:centre)',
     pathMatch: 'full'
   }
 ];

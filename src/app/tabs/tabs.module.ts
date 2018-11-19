@@ -12,6 +12,7 @@ import { AboutPageModule } from '../about/about.module';
 import { HomePageModule } from '../home/home.module';
 import {LocationPageModule} from '../location/location.module';
 import {NewsPageModule} from '../news/news.module';
+import {CentralPageModule} from '../central/central.module';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import {NewsPageModule} from '../news/news.module';
     AboutPageModule,
     ContactPageModule,
     LocationPageModule,
-    NewsPageModule
+    NewsPageModule,
+    CentralPageModule
   ],
   declarations: [TabsPage]
 })

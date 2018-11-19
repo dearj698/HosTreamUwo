@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="md-menu" size="large" color="primary"></ion-icon>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-img no-margin  class="displayed"   src="../../assets/img/img1.jpg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img no-margin  class="displayed"   src="../../assets/img/img2.jpg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img no-margin  class="displayed"   src="../../assets/img/img3.jpg"></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>
+        <ion-card no-margin="true" style="height: 140px">
+          <img src="../../assets/img/doctor.png" class="call_img">
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card no-margin="true"  style="height: 140px">
+  <img src="../../assets/img/wait.png"  (click)="go()" class="call_img">
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card no-margin="true" style="height: 140px">
+          <img src="../../assets/img/emerg.png" class="emer_img">
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card no-margin="true" style="height: 140px">
+          <img src="../../assets/img/call.png" class="call_img">
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
